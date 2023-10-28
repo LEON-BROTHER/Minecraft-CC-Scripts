@@ -2,11 +2,8 @@
 local distance = 0
 print("Wilkommen")
 print("Wie weit soll die Turtle minen?")
-input = io.input()
+input = io.read()
 distance = tonumber(input)
-while distance == 0 do
-    
-end
 function startMining()
     for i=1,distance do
         turtle.dig()
