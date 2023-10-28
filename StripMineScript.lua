@@ -7,7 +7,9 @@ function StartMining()
     for i=1,DistanceLength do
         RefuelCheck()
         turtle.dig()
+        RefuelCheck()
         turtle.digDown()
+        RefuelCheck()
         turtle.forward()
         if i % StripMinePlace == 0 then
             StripMineSide("left")
@@ -35,6 +37,9 @@ function StripMineSide(direction)
     for j=1,StripVentLength do
         RefuelCheck()
         turtle.dig()
+        RefuelCheck()
+        turtle.digDown()
+        RefuelCheck()
         turtle.forward()
     end 
     for j=1,StripVentLength do
@@ -49,7 +54,7 @@ function StripMineSide(direction)
         turtle.turnLeft()
     end
 end
-
+turtle.
 -- Start
 print("Wilkommen")
 print("Wie weit soll die Turtle minen?")
