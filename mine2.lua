@@ -4,8 +4,12 @@ print("Wilkommen")
 print("Wie weit soll die Turtle minen?")
 input = io.read()
 distance = tonumber(input)
+startMining()
 function startMining()
     for i=1,distance do
+        if turtle.getFuelLevel() == 0 then
+            turtle.refuel(1)
+        end
         turtle.dig()
         turtle.digDown()
         turtle.forward()
