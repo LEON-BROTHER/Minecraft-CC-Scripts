@@ -1,10 +1,5 @@
--- Start
-local distance = 0
-print("Wilkommen")
-print("Wie weit soll die Turtle minen?")
-input = io.read()
-distance = tonumber(input)
-StartMining()
+
+
 function StartMining()
     for i=1,distance do
         if turtle.getFuelLevel() == 0 then
@@ -36,4 +31,10 @@ function StartMining()
     end
 end
 
-
+-- Start
+local distance = 0
+print("Wilkommen")
+print("Wie weit soll die Turtle minen?")
+input = io.read()
+distance = tonumber(input)
+StartMining()
